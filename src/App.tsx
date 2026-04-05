@@ -54,6 +54,7 @@ export default function App() {
               src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&q=80&w=800" 
               alt="Mulher saudável e confiante" 
               className="relative z-10 rounded-2xl shadow-2xl object-cover h-[500px] w-full"
+              referrerPolicy="no-referrer"
             />
           </motion.div>
         </div>
@@ -114,7 +115,7 @@ export default function App() {
                 desc: "Náusea, azia e intestino preso não são 'o preço a pagar'. São sinais de que sua digestão precisa de um protocolo de suporte imediato."
               },
               {
-                img: "https://images.unsplash.com/photo-1586473817333-5246738c64c5?auto=format&fit=crop&q=80&w=600",
+                img: "https://images.unsplash.com/photo-1550345332-09e3ac987658?auto=format&fit=crop&q=80&w=600",
                 title: "A armadilha do platô",
                 desc: "O corpo é inteligente e se adapta à medicação. Sem ciclar estratégias metabólicas, a perda de peso trava mesmo aumentando a dose."
               }
@@ -127,7 +128,7 @@ export default function App() {
                 key={i} 
                 className="bg-[#F5EFE9] rounded-xl overflow-hidden text-stone-800 flex flex-col"
               >
-                <img src={card.img} alt={card.title} className="w-full h-48 object-cover" />
+                <img src={card.img} alt={card.title} className="w-full h-48 object-cover" referrerPolicy="no-referrer" />
                 <div className="p-6 flex-1 flex flex-col">
                   <h3 className="text-xl font-display font-bold mb-3 text-[#4A3B32]">{card.title}</h3>
                   <p className="text-stone-600 leading-relaxed">{card.desc}</p>
@@ -258,12 +259,13 @@ export default function App() {
                 <span className="font-display font-bold text-xl tracking-tight">Mounjaro<span className="text-[#8C6239]">PRO</span></span>
               </div>
               
-              <p className="text-lg mb-2">Hoje, sua inversão é de apenas:</p>
-              <div className="flex items-baseline gap-2 mb-8">
-                <span className="text-2xl font-medium">R$</span>
-                <span className="text-6xl font-display font-black">67</span>
-                <span className="text-xl">,00</span>
+              <p className="text-lg mb-2 text-stone-300">Seu investimento hoje é de apenas:</p>
+              <div className="flex items-baseline gap-2 mb-1">
+                <span className="text-2xl font-medium">6x de R$</span>
+                <span className="text-6xl font-display font-black">18</span>
+                <span className="text-xl">,20</span>
               </div>
+              <p className="text-sm text-stone-400 mb-8">ou R$ 97,00 à vista</p>
 
               <ul className="space-y-4 mb-10">
                 {[
@@ -359,6 +361,7 @@ export default function App() {
               src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600" 
               alt="Especialista" 
               className="rounded-2xl shadow-xl w-full object-cover h-[500px]"
+              referrerPolicy="no-referrer"
             />
           </div>
           <div className="md:col-span-7">
