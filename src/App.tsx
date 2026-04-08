@@ -57,8 +57,8 @@ export default function App() {
           >
             <div className="absolute inset-0 bg-[#D4C3B3] rounded-full blur-3xl opacity-50 transform translate-x-10 translate-y-10"></div>
             <img 
-              src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&q=80&w=800" 
-              alt="Mulher saudável e confiante" 
+              src="/hero.png" 
+              alt="Eliane Costa - A Alimentação Correta no Mounjaro" 
               className="relative z-10 rounded-2xl shadow-2xl object-cover h-[500px] w-full"
               referrerPolicy="no-referrer"
             />
@@ -374,15 +374,17 @@ export default function App() {
         <div className="max-w-5xl mx-auto grid md:grid-cols-12 gap-12 items-center">
           <div className="md:col-span-5">
             <img 
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600" 
-              alt="Especialista" 
-              className="rounded-2xl shadow-xl w-full object-cover h-[500px]"
+              src="/author.jpg" 
+              alt="Eliane Costa - Nutricionista Clínica e Esportiva" 
+              className="rounded-2xl shadow-xl w-full object-cover h-[600px] object-top"
               referrerPolicy="no-referrer"
             />
           </div>
           <div className="md:col-span-7">
             <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#8C6239] mb-4 block">Quem criou o método</span>
-            <h2 className="text-3xl font-display font-bold text-[#2D241E] mb-6">Sobre a autoria</h2>
+            <h2 className="text-3xl font-display font-bold text-[#2D241E] mb-2">Eliane Costa</h2>
+            <p className="text-sm font-bold text-stone-500 uppercase tracking-wider mb-8">Nutricionista Clínica e Esportiva — CRN 15230</p>
+            
             <div className="space-y-4 text-stone-700 leading-relaxed">
               <p>
                 Eu sei exatamente o que é investir alto em um tratamento revolucionário e, ao mesmo tempo, sentir medo de fazer algo errado.
