@@ -2,6 +2,12 @@ import React from 'react';
 import { Check, ArrowRight, Shield, Zap, Flame, Lock, Coffee, CheckCircle2, Play, Star } from 'lucide-react';
 import { motion } from 'motion/react';
 
+declare global {
+  interface Window {
+    fbq: any;
+  }
+}
+
 export default function App() {
   return (
     <div className="font-sans text-stone-800 bg-[#F5EFE9] min-h-screen selection:bg-[#4A3B32] selection:text-white">
@@ -280,7 +286,17 @@ export default function App() {
                 ))}
               </ul>
 
-              <button className="bg-[#8C6239] text-white px-6 py-4 rounded-md font-bold text-sm uppercase tracking-wider hover:bg-[#7A5531] transition-colors w-full shadow-lg">
+              <button 
+                onClick={() => {
+                  // Dispara o evento do Pixel
+                  if (typeof window !== 'undefined' && window.fbq) {
+                    window.fbq('track', 'InitiateCheckout');
+                  }
+                  // Redireciona para o checkout da Hotmart
+                  window.open('https://pay.hotmart.com/U103354680W', '_blank');
+                }}
+                className="bg-[#8C6239] text-white px-6 py-4 rounded-md font-bold text-sm uppercase tracking-wider hover:bg-[#7A5531] transition-colors w-full shadow-lg"
+              >
                 Quero potencializar meus resultados
               </button>
             </div>
