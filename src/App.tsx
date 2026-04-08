@@ -57,7 +57,7 @@ export default function App() {
           >
             <div className="absolute inset-0 bg-[#D4C3B3] rounded-full blur-3xl opacity-50 transform translate-x-10 translate-y-10"></div>
             <img 
-              src="/hero.png" 
+              src="https://i.postimg.cc/jS6DZxTK/CRIATIVOS_Eliane_Nutri_Mounjaro_Pro_(2).png" 
               alt="Eliane Costa - A Alimentação Correta no Mounjaro" 
               className="relative z-10 rounded-2xl shadow-2xl object-cover h-[500px] w-full"
               referrerPolicy="no-referrer"
@@ -374,7 +374,7 @@ export default function App() {
         <div className="max-w-5xl mx-auto grid md:grid-cols-12 gap-12 items-center">
           <div className="md:col-span-5">
             <img 
-              src="/author.jpg" 
+              src="https://i.postimg.cc/525Xn4JN/Z62_9679_websize.jpg" 
               alt="Eliane Costa - Nutricionista Clínica e Esportiva" 
               className="rounded-2xl shadow-xl w-full object-cover h-[600px] object-top"
               referrerPolicy="no-referrer"
