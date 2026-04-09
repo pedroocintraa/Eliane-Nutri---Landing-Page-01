@@ -266,12 +266,17 @@ export default function App() {
               </div>
               
               <p className="text-lg mb-2 text-stone-300">Seu investimento hoje é de apenas:</p>
-              <div className="flex items-baseline gap-2 mb-1">
-                <span className="text-2xl font-medium">6x de R$</span>
-                <span className="text-6xl font-display font-black">18</span>
-                <span className="text-xl">,20</span>
+              <div className="flex items-baseline gap-2 mb-3">
+                <span className="text-3xl font-bold text-[#8C6239]">6x</span>
+                <span className="text-2xl font-medium text-stone-300">de R$</span>
+                <span className="text-7xl font-display font-black tracking-tighter text-white">8</span>
+                <span className="text-3xl font-bold text-white">,82</span>
               </div>
-              <p className="text-sm text-stone-400 mb-8">ou R$ 97,00 à vista</p>
+              <div className="mb-8">
+                <span className="text-sm text-stone-300 bg-[#3A2E27] px-4 py-1.5 rounded-full font-medium border border-stone-600 inline-block shadow-sm">
+                  ou R$ 47,00 à vista
+                </span>
+              </div>
 
               <ul className="space-y-4 mb-10">
                 {[
@@ -293,7 +298,7 @@ export default function App() {
                     window.fbq('track', 'InitiateCheckout');
                   }
                   // Redireciona para o checkout da Hotmart
-                  window.open('https://pay.hotmart.com/U103354680W', '_blank');
+                  window.open('https://pay.hotmart.com/U103354680W?off=uiqs614o', '_blank');
                 }}
                 className="bg-[#8C6239] text-white px-6 py-4 rounded-md font-bold text-sm uppercase tracking-wider hover:bg-[#7A5531] transition-colors w-full shadow-lg"
               >
