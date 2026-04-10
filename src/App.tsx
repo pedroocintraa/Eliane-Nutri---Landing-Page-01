@@ -39,13 +39,13 @@ export default function App() {
               <span>O Guia Definitivo</span>
             </div>
             <h1 className="text-4xl lg:text-5xl font-display font-extrabold text-[#2D241E] leading-[1.1] mb-6 tracking-tight">
-              O Mounjaro tira sua fome. Este guia garante que você perca <span className="text-[#8C6239]">gordura, não músculos.</span>
+              O manual de nutrição e acolhimento que deveria vir junto com a sua <span className="text-[#8C6239]">caneta de Mounjaro.</span>
             </h1>
             <p className="text-lg text-stone-600 mb-8 leading-relaxed">
-              O protocolo exato que pacientes de elite usam para potencializar a queima de gordura, blindar o estômago contra náuseas e evitar a flacidez durante o tratamento.
+              Medicação nenhuma é maior que a alimentação. Este guia te ensina o que comer, o que evitar e como organizar suas refeições para usar o Mounjaro sem náusea, sem fraqueza e sem medo de engordar tudo de volta. 7 módulos. Cardápios prontos. Feito por nutricionista clínica.
             </p>
             <a href="#oferta" className="inline-block bg-[#4A3B32] text-white px-8 py-4 rounded-md font-bold text-sm uppercase tracking-wider hover:bg-[#3A2E27] transition-all transform hover:scale-[1.02] shadow-lg w-full text-center lg:w-auto">
-              Quero acelerar meus resultados
+              Quero ter segurança no meu tratamento
             </a>
           </motion.div>
           
@@ -98,11 +98,45 @@ export default function App() {
         </div>
       </section>
 
+      {/* AUTHOR SECTION */}
+      <section className="py-24 px-6 bg-[#F5EFE9]">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-12 gap-12 items-center">
+          <div className="md:col-span-5">
+            <img 
+              src="https://i.postimg.cc/525Xn4JN/Z62_9679_websize.jpg" 
+              alt="Eliane Costa - Nutricionista Clínica e Esportiva" 
+              className="rounded-2xl shadow-xl w-full object-cover h-[600px] object-top"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+          <div className="md:col-span-7">
+            <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#8C6239] mb-4 block">Quem criou o método</span>
+            <h2 className="text-3xl font-display font-bold text-[#2D241E] mb-2">Eliane Costa</h2>
+            <p className="text-sm font-bold text-stone-500 uppercase tracking-wider mb-8">Nutricionista Clínica e Esportiva — CRN 15230</p>
+            
+            <div className="space-y-4 text-stone-700 leading-relaxed">
+              <p>
+                Todos os dias no meu consultório, vejo pessoas que começaram o Mounjaro cheias de esperança — e agora estão passando mal, perdendo força e com medo de que nada funcione de verdade.
+              </p>
+              <p>
+                Muitas pessoas acreditam que a medicação fará todo o trabalho sozinha. A verdade é que o Mounjaro é um acelerador poderoso, mas sem a direção correta, você pode acabar perdendo músculos preciosos e sofrendo com colaterais que poderiam ser facilmente evitados.
+              </p>
+              <p>
+                Foi por ver tantas pacientes desistirem do tratamento por causa de enjoos, ou chegarem ao peso ideal com extrema flacidez, que decidi compilar este protocolo.
+              </p>
+              <p className="font-medium text-[#4A3B32]">
+                Foi por isso que criei este guia — o manual de instruções que deveria vir junto com a caneta.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* NOT YOUR FAULT SECTION */}
       <section className="py-24 px-6 bg-[#4A3B32] text-[#F5EFE9]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#D4C3B3] mb-4 block">A verdade sobre o platô</span>
+            <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#D4C3B3] mb-4 block">O que ninguém te explicou</span>
             <h2 className="text-3xl lg:text-5xl font-display font-bold">
               A culpa não é sua (nem da dose)
             </h2>
@@ -112,18 +146,18 @@ export default function App() {
             {[
               {
                 img: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=600",
-                title: "O foco apenas na caneta",
-                desc: "O Mounjaro tira a fome, mas se você não ingerir os nutrientes certos na pequena janela que consegue comer, seu corpo queima músculo e gera flacidez."
+                title: "A fome some, mas a necessidade não",
+                desc: "O Mounjaro tira a fome, mas o corpo continua precisando de nutrientes. Quem come pouco demais perde músculo, perde energia e aumenta o risco de engordar tudo de volta."
               },
               {
                 img: "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&q=80&w=600",
-                title: "Colaterais negligenciados",
-                desc: "Náusea, azia e intestino preso não são 'o preço a pagar'. São sinais de que sua digestão precisa de um protocolo de suporte imediato."
+                title: "Os colaterais têm causa — e solução",
+                desc: "Náusea, intestino preso e fraqueza não são inevitáveis. São consequência da alimentação errada combinada com um estômago que funciona mais devagar. Ajustando o que você come, eles desaparecem."
               },
               {
                 img: "https://images.unsplash.com/photo-1550345332-09e3ac987658?auto=format&fit=crop&q=80&w=600",
-                title: "A armadilha do platô",
-                desc: "O corpo é inteligente e se adapta à medicação. Sem ciclar estratégias metabólicas, a perda de peso trava mesmo aumentando a dose."
+                title: "Subir a dose nem sempre é a resposta",
+                desc: "Muitas vezes a fome que volta não é falta de dose — é falta de proteína e organização alimentar. Quando a alimentação está certa, a dose atual rende muito mais."
               }
             ].map((card, i) => (
               <motion.div 
@@ -158,11 +192,11 @@ export default function App() {
           </div>
           <div className="lg:col-span-7 grid sm:grid-cols-2 gap-6">
             {[
-              { icon: Flame, text: "Queima de gordura destravada. O corpo volta a responder à medicação." },
-              { icon: Shield, text: "Músculos preservados. Emagreça mantendo o tônus, sem aspecto de 'doente'." },
-              { icon: Coffee, text: "Digestão blindada. Estratégias para zerar enjoos e regular o intestino." },
-              { icon: Zap, text: "Energia restaurada. Fim da letargia e do cansaço extremo no dia a dia." },
-              { icon: Lock, text: "Preparação para o desmame. Treine o metabolismo para não engordar de novo." }
+              { icon: Flame, text: "Emagrecimento consistente sem sofrimento. O corpo volta a responder à medicação." },
+              { icon: Shield, text: "Músculos preservados. Emagreça mantendo o tônus." },
+              { icon: Coffee, text: "Intestino funcionando e estômago sem náusea. Estratégias para zerar enjoos e regular o intestino." },
+              { icon: Zap, text: "Energia restaurada. Fim do cansaço extremo no dia a dia." },
+              { icon: Lock, text: "Transição segura — como parar sem medo do reganho." }
             ].map((item, i) => (
               <div key={i} className={`bg-[#E8DFD5] p-6 rounded-xl ${i === 4 ? 'sm:col-span-2' : ''}`}>
                 <div className="w-12 h-12 bg-[#4A3B32] rounded-full flex items-center justify-center mb-4">
@@ -175,7 +209,7 @@ export default function App() {
         </div>
         <div className="text-center mt-16">
           <a href="#oferta" className="inline-block bg-[#4A3B32] text-white px-8 py-4 rounded-md font-bold text-sm uppercase tracking-wider hover:bg-[#3A2E27] transition-all transform hover:scale-[1.02] shadow-lg">
-            Quero acelerar meus resultados
+            Quero ter segurança no meu tratamento
           </a>
         </div>
       </section>
@@ -184,34 +218,59 @@ export default function App() {
       <section className="py-24 px-6 bg-[#E8DFD5]">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-4">
-            <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#8C6239] mb-4 block">O Mecanismo</span>
-            <h2 className="text-3xl lg:text-4xl font-display font-bold text-[#2D241E] leading-tight">
-              Os 3 pilares do método Mounjaro PRO
-            </h2>
+            <div className="sticky top-8">
+              <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#8C6239] mb-4 block">Estrutura do Guia</span>
+              <h2 className="text-3xl lg:text-4xl font-display font-bold text-[#2D241E] leading-tight mb-6">
+                Tudo o que você vai aprender nos 7 módulos
+              </h2>
+              <p className="text-stone-600 leading-relaxed">
+                Um passo a passo completo, direto ao ponto e focado na prática para você aplicar desde a primeira refeição.
+              </p>
+            </div>
           </div>
-          <div className="lg:col-span-8 space-y-6">
+          <div className="lg:col-span-8 grid sm:grid-cols-2 gap-6">
             {[
               {
                 num: "01",
-                title: "Nutrição de alta densidade",
-                desc: "O que comer e como estruturar suas refeições para nutrir o corpo, preservar músculos e acelerar a queima, mesmo sem sentir fome."
+                title: "O Que É o Mounjaro",
+                desc: "A fisiologia real: como o GLP-1 e GIP agem no seu corpo, por que a fome some e o que acontece quando a alimentação não acompanha."
               },
               {
                 num: "02",
-                title: "Protocolo anti-colaterais",
-                desc: "A combinação exata de chás, suplementos básicos e horários para blindar seu estômago contra náuseas e destravar o intestino."
+                title: "Por Que Cada Dor Acontece",
+                desc: "A causa exata de cada colateral: intestino preso, náusea, vômito, fraqueza, fome que desaparece — e como a alimentação resolve cada um."
               },
               {
                 num: "03",
-                title: "Estratégia de manutenção",
-                desc: "O passo a passo para evitar o efeito rebote. Como sinalizar ao seu corpo que ele não precisa estocar gordura após o fim do tratamento."
+                title: "Alimentação Correta no Mounjaro",
+                desc: "O que comer, o que evitar, os horários ideais e os 3 pilares de cada refeição para nunca mais passar mal."
+              },
+              {
+                num: "04",
+                title: "Proteção da Massa Magra",
+                desc: "Como saber se você está perdendo músculo, o que fazer nos dias de náusea e como parar o Mounjaro sem engordar tudo de volta."
+              },
+              {
+                num: "05",
+                title: "Economia de Dose e Hidratação",
+                desc: "Como a alimentação certa faz sua dose render mais (e por que subir a dose nem sempre é a solução)."
+              },
+              {
+                num: "06",
+                title: "Pré-Treino e Performance",
+                desc: "Por que treinar em jejum com Mounjaro é perigoso e o pré-treino leve que muda tudo."
+              },
+              {
+                num: "07",
+                title: "Parte Prática",
+                desc: "Cardápio feminino (1.400 kcal), cardápio masculino (1.800 kcal), checklist diário, FAQ e avisos essenciais."
               }
             ].map((step, i) => (
-              <div key={i} className="bg-[#F5EFE9] p-8 rounded-xl flex flex-col sm:flex-row gap-6 items-start">
-                <span className="text-5xl font-display font-black text-[#D4C3B3] leading-none">{step.num}</span>
+              <div key={i} className={`bg-[#F5EFE9] p-6 rounded-xl flex flex-col gap-4 items-start shadow-sm border border-stone-200/50 ${i === 6 ? 'sm:col-span-2' : ''}`}>
+                <span className="text-4xl font-display font-black text-[#D4C3B3] leading-none">{step.num}</span>
                 <div>
                   <h3 className="text-xl font-display font-bold text-[#4A3B32] mb-2">{step.title}</h3>
-                  <p className="text-stone-600">{step.desc}</p>
+                  <p className="text-sm text-stone-600 leading-relaxed">{step.desc}</p>
                 </div>
               </div>
             ))}
@@ -219,36 +278,58 @@ export default function App() {
         </div>
       </section>
 
-      {/* SOCIAL PROOF (Mockups) */}
+      {/* WHO IS THIS FOR SECTION */}
       <section className="py-24 px-6">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#8C6239] mb-4 block">Casos reais</span>
+            <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#8C6239] mb-4 block">Alinhamento de Expectativas</span>
             <h2 className="text-3xl lg:text-4xl font-display font-bold text-[#2D241E]">
-              Resultados de quem já aplicou o método
+              Para quem é (e para quem não é) este guia
             </h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              "Achei que o enjoo era normal, mas depois que apliquei o pilar 2 do guia, sumiu no segundo dia! E a balança voltou a descer. 🙏",
-              "Meu maior medo era ficar flácida. Estou no 3º mês de Mounjaro, seguindo a nutrição do guia e meu corpo tá super firme. Minha médica até elogiou!",
-              "Estava estagnada na dose de 5mg. Foi só ajustar os horários e a suplementação como ensina no ebook que perdi mais 3kg em uma semana."
-            ].map((msg, i) => (
-              <div key={i} className="bg-white p-6 rounded-2xl shadow-sm border border-stone-100">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-stone-200 rounded-full flex items-center justify-center text-stone-500 font-display font-bold">
-                    {['M', 'A', 'C'][i]}
-                  </div>
-                  <div>
-                    <p className="font-bold text-sm">Aluna Mounjaro PRO</p>
-                    <div className="flex text-yellow-400">
-                      {[...Array(5)].map((_, j) => <Star key={j} className="w-3 h-3 fill-current" />)}
-                    </div>
-                  </div>
-                </div>
-                <p className="text-stone-600 text-sm italic">"{msg}"</p>
-              </div>
-            ))}
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Para quem é */}
+            <div className="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-green-600">
+              <h3 className="text-xl font-display font-bold text-[#2D241E] mb-6 flex items-center gap-2">
+                <span className="bg-green-100 text-green-700 w-8 h-8 rounded-full flex items-center justify-center">✓</span>
+                Este guia É PARA VOCÊ se:
+              </h3>
+              <ul className="space-y-4">
+                {[
+                  "Você já usa ou vai começar o Mounjaro e quer fazer o tratamento da forma certa",
+                  "Está sentindo náusea, intestino preso ou fraqueza e quer resolver com alimentação",
+                  "Tem medo de perder músculo e ficar com o corpo flácido durante o emagrecimento",
+                  "Quer saber exatamente o que comer em cada refeição, com cardápios prontos",
+                  "Quer parar o Mounjaro no futuro sem engordar tudo de volta"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone-700 leading-relaxed">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Para quem não é */}
+            <div className="bg-[#F5EFE9] p-8 rounded-2xl border-t-4 border-red-600 opacity-90">
+              <h3 className="text-xl font-display font-bold text-[#4A3B32] mb-6 flex items-center gap-2">
+                <span className="bg-red-100 text-red-700 w-8 h-8 rounded-full flex items-center justify-center">✗</span>
+                Este guia NÃO É para você se:
+              </h3>
+              <ul className="space-y-4">
+                {[
+                  "Você procura uma dieta milagrosa ou fórmula mágica",
+                  "Não está disposta a ajustar sua alimentação",
+                  "Espera que a medicação faça todo o trabalho sozinha"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <span className="text-red-600 font-bold text-lg leading-none mt-0.5">✕</span>
+                    <span className="text-stone-600 leading-relaxed">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -263,6 +344,14 @@ export default function App() {
               <div className="flex items-center gap-2 mb-8">
                 <Shield className="w-6 h-6 text-[#8C6239]" />
                 <span className="font-display font-bold text-xl tracking-tight">Mounjaro<span className="text-[#8C6239]">PRO</span></span>
+              </div>
+
+              <div className="bg-[#3A2E27] p-5 rounded-xl border border-stone-600 mb-8">
+                <p className="text-stone-300 text-sm leading-relaxed">
+                  Você já investe entre <strong className="text-white">R$ 800 e R$ 3.000</strong> por mês na medicação.
+                  <br className="hidden sm:block" />
+                  Este guia custa menos do que um único dia do seu tratamento — e garante que cada dose trabalhe a favor do seu corpo, não contra.
+                </p>
               </div>
               
               <p className="text-lg mb-2 text-stone-300">Seu investimento hoje é de apenas:</p>
@@ -302,7 +391,7 @@ export default function App() {
                 }}
                 className="bg-[#8C6239] text-white px-6 py-4 rounded-md font-bold text-sm uppercase tracking-wider hover:bg-[#7A5531] transition-colors w-full shadow-lg"
               >
-                Quero potencializar meus resultados
+                Quero começar meu tratamento da forma certa
               </button>
             </div>
 
@@ -312,11 +401,12 @@ export default function App() {
                 <h3 className="text-2xl font-display font-bold mb-8">O que você recebe:</h3>
                 <ul className="space-y-5">
                   {[
-                    "O Ebook Completo Mounjaro PRO",
-                    "Cardápios Estratégicos para dias sem fome",
-                    "Guia de Suplementação Anti-Náusea",
-                    "Checklist do Desmame Seguro",
-                    "Acesso vitalício a todas as atualizações"
+                    "Guia completo com 7 módulos — da fisiologia ao cardápio pronto (27 páginas)",
+                    "Cardápio feminino (1.400 kcal) e masculino (1.800 kcal) prontos para seguir",
+                    "Protocolo para dias de náusea — o que comer e o que evitar quando estiver passando mal",
+                    "Checklist diário do usuário de Mounjaro — imprima e cole na geladeira",
+                    "Guia de transição — como parar o Mounjaro sem reganho de peso",
+                    "Acesso vitalício + todas as atualizações futuras"
                   ].map((item, i) => (
                         <li key={i} className="flex items-start gap-3">
                       <span className="text-[#8C6239] mt-1">👉</span>
@@ -341,69 +431,33 @@ export default function App() {
         </div>
       </section>
 
-      {/* CROSSROADS SECTION */}
+      {/* EMPOWERMENT SECTION */}
       <section className="py-24 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#8C6239] mb-4 block">A decisão</span>
+            <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#8C6239] mb-4 block">O próximo passo</span>
             <h2 className="text-3xl font-display font-bold text-[#2D241E]">
-              Este é o momento de escolher
+              O seu tratamento merece esse cuidado
             </h2>
           </div>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12">
-            <div className="bg-[#E8DFD5] p-8 rounded-xl border-t-4 border-stone-400">
-              <h3 className="text-xl font-display font-bold text-[#4A3B32] mb-4">Opção 1:</h3>
-              <p className="text-stone-700 leading-relaxed">
-                Continuar gastando milhares de reais na medicação, sofrendo com enjoos diários e correndo o risco de ficar com o corpo flácido e perder massa magra.
+            <div className="bg-[#E8DFD5] p-8 rounded-xl border-t-4 border-stone-400 flex flex-col justify-center">
+              <p className="text-stone-800 text-lg leading-relaxed font-medium">
+                Você já deu o passo mais importante ao decidir cuidar da sua saúde. Agora é hora de garantir que o Mounjaro trabalhe a seu favor — sem sofrimento, sem perda de músculo e sem medo do que vem depois.
               </p>
             </div>
-            <div className="bg-[#4A3B32] p-8 rounded-xl border-t-4 border-[#8C6239] text-[#F5EFE9]">
-              <h3 className="text-xl font-display font-bold mb-4">Opção 2:</h3>
-              <p className="leading-relaxed">
-                Ter o manual definitivo para extrair 100% do potencial do Mounjaro, emagrecendo com saúde, conforto e mantendo um corpo firme e estético.
+            <div className="bg-[#4A3B32] p-8 rounded-xl border-t-4 border-[#8C6239] text-[#F5EFE9] flex flex-col justify-center">
+              <p className="text-lg leading-relaxed">
+                Este guia é o manual de instruções que deveria vir junto com a caneta. <strong className="text-white">27 páginas</strong> com tudo que você precisa saber para transformar seu tratamento em resultado de verdade.
               </p>
             </div>
           </div>
 
           <div className="text-center">
             <a href="#oferta" className="inline-block bg-[#4A3B32] text-white px-10 py-5 rounded-md font-bold text-sm uppercase tracking-wider hover:bg-[#3A2E27] transition-all transform hover:scale-[1.02] shadow-xl w-full md:w-auto">
-              Tocar aqui para acessar o guia
+              Quero cuidar do meu corpo da forma certa
             </a>
-          </div>
-        </div>
-      </section>
-
-      {/* AUTHOR SECTION */}
-      <section className="py-24 px-6 bg-[#E8DFD5]">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-12 gap-12 items-center">
-          <div className="md:col-span-5">
-            <img 
-              src="https://i.postimg.cc/525Xn4JN/Z62_9679_websize.jpg" 
-              alt="Eliane Costa - Nutricionista Clínica e Esportiva" 
-              className="rounded-2xl shadow-xl w-full object-cover h-[600px] object-top"
-              referrerPolicy="no-referrer"
-            />
-          </div>
-          <div className="md:col-span-7">
-            <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#8C6239] mb-4 block">Quem criou o método</span>
-            <h2 className="text-3xl font-display font-bold text-[#2D241E] mb-2">Eliane Costa</h2>
-            <p className="text-sm font-bold text-stone-500 uppercase tracking-wider mb-8">Nutricionista Clínica e Esportiva — CRN 15230</p>
-            
-            <div className="space-y-4 text-stone-700 leading-relaxed">
-              <p>
-                Eu sei exatamente o que é investir alto em um tratamento revolucionário e, ao mesmo tempo, sentir medo de fazer algo errado.
-              </p>
-              <p>
-                Muitas pessoas acreditam que a medicação fará todo o trabalho sozinha. A verdade é que o Mounjaro é um acelerador poderoso, mas sem a direção correta, você pode acabar perdendo músculos preciosos e sofrendo com colaterais que poderiam ser facilmente evitados.
-              </p>
-              <p>
-                Foi por ver tantas pessoas desistirem do tratamento por causa de enjoos, ou chegarem ao peso ideal com extrema flacidez, que decidi compilar este protocolo.
-              </p>
-              <p>
-                Meu objetivo é simples: entregar a você o manual de instruções que deveria vir junto com a caneta. Um passo a passo prático, baseado em ciência e resultados reais, para que você alcance sua melhor versão com saúde e segurança.
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -439,13 +493,33 @@ export default function App() {
               question="Vou precisar comprar suplementos caros?" 
               answer="Definitivamente não. Nosso foco é na alimentação real e em chás/suplementos básicos e acessíveis que você encontra em qualquer farmácia ou loja de produtos naturais." 
             />
+            <FAQItem 
+              question="Serve para quem está começando agora com o Mounjaro?" 
+              answer="Sim, e na verdade é o momento ideal. Começar com a alimentação correta desde o início evita a maioria dos colaterais e protege sua massa magra desde o primeiro dia." 
+            />
+            <FAQItem 
+              question="Funciona para quem está em dose baixa (2,5mg ou 5mg)?" 
+              answer="Sim. O protocolo alimentar funciona em qualquer dose. Na verdade, uma das coisas que você vai aprender é que muitas vezes não é a dose que precisa subir — é a alimentação que precisa ser ajustada." 
+            />
+            <FAQItem 
+              question="Meu marido/namorado também pode usar?" 
+              answer="Sim! O guia inclui cardápio masculino (1.800 kcal) além do feminino (1.400 kcal), com todas as adaptações necessárias." 
+            />
+            <FAQItem 
+              question="E se eu não conseguir seguir o cardápio à risca?" 
+              answer="O guia não é uma dieta rígida. É um protocolo com princípios claros (os 3 pilares de cada refeição) e opções flexíveis. Você vai entender a lógica por trás de cada escolha, então consegue adaptar ao seu dia a dia." 
+            />
+            <FAQItem 
+              question="Por quanto tempo terei acesso?" 
+              answer="Acesso vitalício. O ebook é seu para sempre, e você recebe automaticamente todas as atualizações futuras sem custo adicional." 
+            />
           </div>
         </div>
       </section>
 
       {/* FOOTER */}
       <footer className="bg-[#2D241E] text-stone-400 py-8 text-center text-sm">
-        <p className="font-display">© 2024 Mounjaro PRO. Todos os direitos reservados.</p>
+        <p className="font-display">© 2025 Mounjaro PRO. Todos os direitos reservados.</p>
         <p className="mt-2 text-xs max-w-2xl mx-auto px-6">
           Este produto não substitui o parecer médico profissional. Sempre consulte um médico para tratar de assuntos relativos à saúde.
         </p>
