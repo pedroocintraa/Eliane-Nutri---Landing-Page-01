@@ -45,7 +45,7 @@ export default function App() {
               Medicação nenhuma é maior que a alimentação. Este guia te ensina o que comer, o que evitar e como organizar suas refeições para usar o Mounjaro sem náusea, sem fraqueza e sem medo de engordar tudo de volta. 7 módulos. Cardápios prontos. Feito por nutricionista clínica.
             </p>
             <a href="#oferta" className="inline-block bg-[#4A3B32] text-white px-8 py-4 rounded-md font-bold text-sm uppercase tracking-wider hover:bg-[#3A2E27] transition-all transform hover:scale-[1.02] shadow-lg w-full text-center lg:w-auto">
-              Quero ter segurança no meu tratamento
+              Quero segurança no tratamento
             </a>
           </motion.div>
           
@@ -209,7 +209,7 @@ export default function App() {
         </div>
         <div className="text-center mt-16">
           <a href="#oferta" className="inline-block bg-[#4A3B32] text-white px-8 py-4 rounded-md font-bold text-sm uppercase tracking-wider hover:bg-[#3A2E27] transition-all transform hover:scale-[1.02] shadow-lg">
-            Quero ter segurança no meu tratamento
+            Quero segurança no tratamento
           </a>
         </div>
       </section>
@@ -354,16 +354,21 @@ export default function App() {
                 </p>
               </div>
               
-              <p className="text-lg mb-2 text-stone-300">Seu investimento hoje é de apenas:</p>
+              <div className="mb-4">
+                <span className="inline-block bg-red-600 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider mb-3 animate-pulse shadow-lg">
+                  Oferta de lançamento — primeiras 50 unidades
+                </span>
+                <p className="text-stone-400 text-lg">De <span className="line-through">R$ 47,00</span> por apenas:</p>
+              </div>
               <div className="flex items-baseline gap-2 mb-3">
-                <span className="text-3xl font-bold text-[#8C6239]">6x</span>
+                <span className="text-3xl font-bold text-[#8C6239]">3x</span>
                 <span className="text-2xl font-medium text-stone-300">de R$</span>
-                <span className="text-7xl font-display font-black tracking-tighter text-white">8</span>
-                <span className="text-3xl font-bold text-white">,82</span>
+                <span className="text-7xl font-display font-black tracking-tighter text-white">9</span>
+                <span className="text-3xl font-bold text-white">,64</span>
               </div>
               <div className="mb-8">
                 <span className="text-sm text-stone-300 bg-[#3A2E27] px-4 py-1.5 rounded-full font-medium border border-stone-600 inline-block shadow-sm">
-                  ou R$ 47,00 à vista
+                  ou R$ 27,00 à vista
                 </span>
               </div>
 
@@ -387,11 +392,11 @@ export default function App() {
                     window.fbq('track', 'InitiateCheckout');
                   }
                   // Redireciona para o checkout da Hotmart
-                  window.open('https://pay.hotmart.com/U103354680W?off=uiqs614o', '_blank');
+                  window.open('https://pay.hotmart.com/U103354680W?off=qhmfxme2', '_blank');
                 }}
                 className="bg-[#8C6239] text-white px-6 py-4 rounded-md font-bold text-sm uppercase tracking-wider hover:bg-[#7A5531] transition-colors w-full shadow-lg"
               >
-                Quero começar meu tratamento da forma certa
+                Quero começar da forma certa
               </button>
             </div>
 
@@ -456,7 +461,7 @@ export default function App() {
 
           <div className="text-center">
             <a href="#oferta" className="inline-block bg-[#4A3B32] text-white px-10 py-5 rounded-md font-bold text-sm uppercase tracking-wider hover:bg-[#3A2E27] transition-all transform hover:scale-[1.02] shadow-xl w-full md:w-auto">
-              Quero cuidar do meu corpo da forma certa
+              Quero cuidar do meu corpo
             </a>
           </div>
         </div>
